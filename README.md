@@ -16,3 +16,5 @@ python main.py
 - Přechod na další pointcloud: prázdný výběr + enter
 
 ![example](example.png)
+
+![example](example_large.png)

@@ -10,7 +10,7 @@ for cloud in clouds:
     X = np.loadtxt(cloud)
     cones = []
 
-    v = pptk.viewer(X)
+    v = pptk.viewer(X[:, :3])
     while True:
         v.wait()
         indices = v.get("selected")
