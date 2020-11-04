@@ -4,7 +4,9 @@ import numpy as np
 import pptk
 
 
-for cloud in os.scandir("clouds"):
+clouds = sorted(os.scandir("clouds"), key=lambda e: e.name)
+
+for cloud in clouds:
     X = np.loadtxt(cloud)
     cones = []
 
