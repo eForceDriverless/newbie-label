@@ -10,7 +10,8 @@ for cloud in clouds:
     X = np.loadtxt(cloud)
     cones = []
 
-    v = pptk.viewer(X[:, :3])
+    v = pptk.viewer(X[:, :3], X[:, 3])
+    v.color_map("jet")
     while True:
         v.wait()
         indices = v.get("selected")
