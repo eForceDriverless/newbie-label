@@ -63,7 +63,7 @@ if __name__ == "__main__":
 
             cones.append(cloud[indices])
 
-            if not is_windows:
+            if True:
                 draw = update_colors(cloud, cones)
 
                 print("Redrawing...")
