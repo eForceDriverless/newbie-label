@@ -10,7 +10,7 @@ def read_dataset_to_numpy(filename):
     array = np.zeros((len(pointcloud), 4), dtype=np.float)
 
     for i, point in enumerate(pointcloud):
-        array[i] = [point["x"], point["y"], point["z"], point["intensity"]]
+        array[i] = [point[0], point[1], point[2], point[3]]
 
     return array
 
